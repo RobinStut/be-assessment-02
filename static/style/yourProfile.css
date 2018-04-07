@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+legend {
+    text-align: center;
+    line-height: .1rem;
+    margin-bottom: 1rem;
+}
+
+nav {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    box-shadow: 0 .1rem 1rem 0 rgba(0, 0, 0, 0.2), 0 0 .6rem 0 rgba(0, 0, 0, 0.2);
+}
+
+nav img {
+    height: 3rem;
+    margin: 0 auto;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+fieldset {
+    border: 0;
+}
+
+fieldset a {
+    background-color: #c4c5c5;
+    color: #c4c5c5;
+}
+
+legend a:nth-child(1) {
+    -webkit-clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+}
+
+legend a:nth-child(2) {
+    -webkit-clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+}
+
+.imageGallery {
+    width: 100%;
+    position: relative;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.images {
+    display: inline-block;
+    position: relative;
+}
+
+.images img {
+    width: 100%;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.images input[type="checkbox"] {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 100;
+}
+
+.images input[type="radio"] {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 100;
+}
+
+.imageGallery a:nth-child(1) {
+    -webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+    clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+    position: absolute;
+    top: 45%;
+    left: .5em;
+    z-index: 100;
+}
+
+.imageGallery a:nth-child(2) {
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    position: absolute;
+    top: 45%;
+    right: .5em;
+    z-index: 100;
+}

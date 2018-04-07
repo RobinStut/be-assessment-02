@@ -1,0 +1,30 @@
+*{
+font-family: sans-serif;
+}
+
+body{
+margin: 0;
+}
+
+h2 {
+text-align: center;
+}
+
+nav{
+background-color: white;
+display: grid;
+grid-template-columns: 1fr 2fr 1fr;
+box-shadow: 0 .1em 1em 0 rgba(0,0,0,0.2),0 0 .6em 0 rgba(0,0,0,0.2);
+margin-bottom:  1.3em;
+}
+
+nav img{
+height: 3rem;
+margin: 0 auto;
+margin-bottom: .5em;
+margin-top: .5em;
+}
+
+nav a:nth-child(2){
+display: flex;
+}

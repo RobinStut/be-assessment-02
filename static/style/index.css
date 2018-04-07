@@ -1,0 +1,45 @@
+body{
+margin: 0;
+}
+
+h2 {
+text-align: center;
+color: white;
+text-decoration: none;
+}
+
+nav{
+background-color: white;
+display: grid;
+grid-template-columns: 1fr 2fr 1fr;
+box-shadow: 0 .1em 1em 0 rgba(0,0,0,0.2),0 0 .6em 0 rgba(0,0,0,0.2);
+}
+
+nav img{
+height: 3rem;
+margin: 0 auto;
+margin-bottom: .5em;
+margin-top: .5em;
+}
+
+section{
+height: calc(33vh - 3em);
+background: linear-gradient(#8b1d59, #b7054f);
+margin-left: 1em;
+margin-right: 1em;
+margin-bottom: 1em;
+}
+
+.changes{
+display: grid;
+grid-template-columns: 50% 50%;
+}
+
+.changes section{
+background-color: #c4c5c5;
+}
+
+.changes section:nth-child(even){
+margin-left: 0;
+}
+

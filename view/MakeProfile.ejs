@@ -1,0 +1,29 @@
+<% include head.ejs %>
+<title>Add a movie - My movie website</title>
+<h1>Fill in your details</h1>
+<form action=/ method=post enctype=multipart/form-data>
+<!-- enctype is nodig voor input[type=file]-->
+  <label>First name <input name=title></label>
+  <label>Last name <input name=title></label>
+  <label>
+    Your image
+    <input
+      name=cover
+      type=file
+      accept=image/*
+    >
+  </label>
+  <label>
+    Plot (short)
+    <input name=plot>
+  </label>
+  <label>
+    Description (long)
+    <textarea
+      name=description
+      rows=5
+    ></textarea>
+  </label>
+  <button>Make my profile</button>
+</form>
+<% include tail.ejs %>
