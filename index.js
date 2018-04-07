@@ -20,33 +20,6 @@ mongo.MongoClient.connect(url, function (err, client) {
   db = client.db('OurWish')
 })
 
-//var data = [
-//  {
-//    id: 'evil-dead',
-//    name: 'Emma Watson',
-//    age: '23',
-//    place: 'Heereveen',
-//    value: '95',
-//    characts: ['She has brown eyes', 'She is skinny', 'She weares lipstick', 'She has slick hair', '    She is 1.65m']
-//  },
-//    {
-//    id: 'evil-dead',
-//    name: 'Joice Latice',
-//    age: '20',
-//    place: 'Bergen op Zoom',
-//    value: '85',
-//    characts: ['She has brown eyes', 'She is skinny', 'She weares lipstick', 'She has slick hair', 'She is 1.65m']
-//  },
-//  {
-//    id: 'the-shawshank-redemption',
-//    name: 'Chanel Preston',
-//    age: '18',
-//    place: 'Den Helder',
-//    value: '75',
-//    characts: ['She has brown eyes', 'She is skinny', 'She weares lipstick', 'She has slick hair', 'She is 1.65m']
-//  }
-//]
-
 var yourProfileData = [
     {
         id: '1',
@@ -115,7 +88,7 @@ function match(req, res, next) {
   var _id = new mongo.ObjectId(id)
   console.log("116 = "+ _id)
 
-  db.collection('profile').findOne(_id,done)
+  db.collection('Users').findOne(_id,done)
 
   function done (error, data) {
     if (error) {
