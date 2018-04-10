@@ -1,0 +1,18 @@
+<% include head.ejs %>
+   <link rel=stylesheet href="/add.css">
+
+   <% include nav.ejs %>
+<title>Sign up - My movie website</title>
+<h1>Sign up</h1>
+<form action=/signUp method=post>
+  <label>
+    Username
+    <input name=username>
+  </label>
+  <label>
+    Password
+    <input name=password type=password>
+  </label>
+  <button>Sign up</button>
+</form>
+<% include tail.ejs %>

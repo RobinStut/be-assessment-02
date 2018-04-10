@@ -11,74 +11,45 @@
 <% for (var index = 0; index < data.length; index++) { %>
 <section id="person" class="person">
 <img class="personImage" src="<%= data[index].pictures[1] %>" alt="<%= data[index].name %>">
-<section class="personInfo">
 <p class="personName"><%= data[index].name %></p>
 <p class="personAge"><%= data[index].bornDate %></p>
 <p class="personPlace"><%= data[index].place %></p>
 <a href="/<%= data[index]._id %>">View Profile</a>
-</section>
 <ul>
-<% for(var i=0; i<data[index].characts.length; i++) { %>
 <li>
-<%= data[index].characts[i] %>
+<%= data[index].name.slice(0, data[index].name.indexOf(" ")) %> has
+<%= data[index].eyeColor %> eyes
 </li>
-<% } %>
+<li>
+<%= data[index].name.slice(0, data[index].name.indexOf(" ")) %> has
+<%= data[index].hairColor %> hair
+</li>
+<li>
+<%= data[index].name.slice(0, data[index].name.indexOf(" ")) %> has
+<%= data[index].hairLength %> hair
+</li>
 </ul>
+</section>
+<% } %>
+
+
+
+
+
+
+
 <section id="matchlist" class="match">
 
 
 
 </section>
-</section>
-<% } %>
+
+
 
 <% include tail.ejs %>
 
 
 
-
-
-
-
-<!--
-
-<% if (data.cover) { %>
-<img
-  alt
-  src="/upload/<%= data.cover %>"
->
-<% } %>
-
-
-
-<section id="person" class="person">
-<img class="personImage" src="https://i0.wp.com/www.uselessdaily.com/wp-content/uploads/2015/04/emma-watson-ralph-lauren-t.jpg?resize=300%2C300&ssl=1" alt="Nikki">
-<section class="personInfo">
-<p class="personName"><%= data.name %></p>
-<p class="personAge"><%= data.age %></p>
-<p class="personPlace"><%= data.place %></p>
-</section>
-<progress id="match" max="100" value="80"></progress>
-<section id="matchlist" class="match">
-<p><%= data.characts %></p>
-</section>
--->
-
-
-
-
-
-<!--
-<p><%= data.description %></p>
-<p>
-  <button
-    id=js-remove
-    data-id="<%= data.id %>"
-    class=danger
-  >Remove</button>
-</p>
-<p><a href="/">Back to list</a></p>
--->
 <% include tail.ejs %>
 
 

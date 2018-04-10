@@ -1,0 +1,156 @@
+*{
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+}
+
+legend {
+    text-align: center;
+    line-height: .1rem;
+    margin-bottom: 1rem;
+}
+
+nav {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    box-shadow: 0 .1rem 1rem 0 rgba(0, 0, 0, 0.2), 0 0 .6rem 0 rgba(0, 0, 0, 0.2);
+}
+
+nav a{
+    display: flex;
+    justify-content: center;
+}
+
+nav img {
+    height: 3rem;
+    margin: 0 auto;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+
+
+.person{
+padding-top: 1rem;
+padding-bottom: 1rem;
+/*background-color: white;*/
+position: relative;
+}
+
+.person:nth-child(even){
+/*background-color: #f5f4f3;*/
+}
+
+ul{
+    display: inline-block;
+}
+
+.person .personImage {
+-webkit-clip-path: circle(50% at 50% 50%);
+clip-path: circle(50% at 50% 50%);
+width: 5.2rem;
+background: linear-gradient(#8b1d59, #b7054f);
+height: 5.3rem;
+float: left;
+}
+
+
+
+.personInfo{
+    display: flex;
+    float: left;
+    width: 75%;
+    padding-left: 2em;
+    padding-right: 2em;
+    box-sizing: border-box;
+}
+
+
+.personInfo p{
+margin-right: .5em;
+}
+
+progress{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.gallery{
+display: none;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.gallery img{
+height: 33%;
+width: 33%;
+}
+
+.clicked .gallery{
+    display: flex;
+}
+
+.collapse{
+margin-left: 2em;
+}
+
+.match{
+display: none;
+position: absolute;
+z-index: 100;
+color: white;
+background-color: #3d3c3c;
+right: 15%;
+padding: 1em;
+border-radius: .3rem;
+
+}
+
+.clickedprogress {
+display: block;
+}
+
+section{
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*
+form:nth-child(even){
+background-color: #f5f4f3;
+}
+*/
+
+
+
+label{
+width: 100%;
+margin-bottom: 1em;
+}
+
+form{
+display: flex;
+flex-wrap: wrap;
+padding-left: 3em;
+padding-right: 3em;
+
+}
+
+fieldset{
+    display: inline-block;
+    justify-content: space-between;
+}
+}

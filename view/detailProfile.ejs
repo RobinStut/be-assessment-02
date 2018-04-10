@@ -1,14 +1,41 @@
 <% include head.ejs %>
-<link rel=stylesheet href="/findYourWish.css">
+<link rel=stylesheet href="/detailProfile.css">
 <!--<link rel=stylesheet href=/index.css>-->
 
 <% include nav.ejs %>
 
-<title>Our Wish - </title>
-<h1>Find Your Wish</h1>
+<title>Our Wish - <%= data.name %></title>
+<section>
+<h1><%= data.name %></h1>
 
-<p><%= data.name %></p>
+<p><%= data.bornDate %></p>
+<p><%= data.place %></p>
 
+<ul>
+<li>
+<%= data.name.slice(0, data.name.indexOf(" ")) %> has
+<%= data.eyeColor %> eyes
+</li>
+<li><%= data.name.slice(0, data.name.indexOf(" ")) %> has
+<%= data.hairColor %> hair
+</li>
+<li>
+<%= data.name.slice(0, data.name.indexOf(" ")) %> has
+<%= data.hairLength %> hair
+</li>
+</ul>
+
+<% for(var i=0; i<data.pictures.length; i++) { %>
+<img src="<%= data.pictures[i] %>" alt="<%= data.name %>">
+<% } %>
+<p>Send a message to <a href="mailto:<%=
+
+data.name.split(' ').join('')
+        %>@OurWish.com"><%=
+
+data.name.split(' ').join('')
+        %>@OurWish.com</a></p>
+</section>
 
 
 

@@ -1,3 +1,7 @@
+*{
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 body {
     margin: 0;
 }
@@ -27,15 +31,16 @@ nav img {
 }
 
 
+
 .person{
 padding-top: 1rem;
 padding-bottom: 1rem;
-background-color: white;
+/*background-color: white;*/
 position: relative;
 }
 
 .person:nth-child(even){
-background-color: #f5f4f3;
+/*background-color: #f5f4f3;*/
 }
 
 ul{
@@ -46,6 +51,8 @@ ul{
 -webkit-clip-path: circle(50% at 50% 50%);
 clip-path: circle(50% at 50% 50%);
 width: 5.2rem;
+background: linear-gradient(#8b1d59, #b7054f);
+height: 5.3rem;
 float: left;
 }
 
@@ -105,4 +112,14 @@ border-radius: .3rem;
 
 .clickedprogress {
 display: block;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section:nth-child(even){
+background-color: #f5f4f3;
 }

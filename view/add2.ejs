@@ -1,0 +1,43 @@
+<% include head.ejs %>
+    <title>Add a movie - My movie website</title>
+    <h1>Add a new movie</h1>
+    <form action=/ method=post enctype=multipart/form-data>
+        <!-- enctype is nodig voor input[type=file]-->
+
+<fieldset>
+<label>Your eye color
+            <input type="radio" name="eyeColor" value="blue" >Blue eyes
+            <input type="radio" name="eyeColor" value="brown" >Brown eyes
+            <input type="radio" name="eyeColor" value="green" >Green eyes
+        </label>
+</fieldset>
+<fieldset>
+        <label>Your hair color
+            <input type="radio" name="hairColor" value="Blond" >Blond
+            <input type="radio" name="hairColor" value="Brown" >Brown
+            <input type="radio" name="hairColor" value="Red" >Red
+            <input type="radio" name="hairColor" value="Grey" >Grey
+        </label>
+</fieldset>
+<fieldset>
+        <label>Your hair style
+            <input type="radio" name="hairStyle" value="bald" >bald
+            <input type="radio" name="hairStyle" value="short" >short
+            <input type="radio" name="hairStyle" value="medium" >medium
+            <input type="radio" name="hairStyle" value="long" >long
+        </label>
+</fieldset>
+        <label>Your length
+            <select name=yourLength>
+                <option value="<150">under 1.50m</option>
+                <option value="Female">1.50 - 1.60</option>
+                <option value="Female">1.60 - 1.70</option>
+                <option value="Female">1.70 - 1.80</option>
+                <option value="Female">1.80 - 1.90</option>
+                <option value=">200">longer then 2.00m</option>
+            </select>
+        </label>
+
+        <button>Add</button>
+    </form>
+    <% include tail.ejs %>

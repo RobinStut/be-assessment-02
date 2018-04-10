@@ -1,28 +1,77 @@
 <% include head.ejs %>
-<title>Add a movie - My movie website</title>
-<h1>Add a new movie</h1>
-<form action=/ method=post enctype=multipart/form-data>
-<!-- enctype is nodig voor input[type=file]-->
-  <label>Title <input name=title></label>
-  <label>
-    Cover
-    <input
-      name=cover
-      type=file
-      accept=image/*
-    >
-  </label>
-  <label>
-    Plot (short)
-    <input name=plot>
-  </label>
-  <label>
-    Description (long)
-    <textarea
-      name=description
-      rows=5
-    ></textarea>
-  </label>
-  <button>Add</button>
-</form>
-<% include tail.ejs %>
+   <link rel=stylesheet href="/add.css">
+
+   <% include nav.ejs %>
+   <section>
+    <title>Add your profile</title>
+    <h1>Add your profile</h1>
+    <form action=/ method=post enctype=multipart/form-data>
+        <!-- enctype is nodig voor input[type=file]-->
+        <label>Full name
+            <input name=name>
+        </label>
+        <label>
+            Birth Year
+            <input type="number" name=bornDate pattern="[0-9]{4}">
+        </label>
+        <label>Living place
+            <input name=place>
+        </label>
+        <label for="">image
+            <input name=pictures type=file accept=image/*>
+        </label>
+        <label>Your gender
+            <select name=gender>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </label>
+<label>Your gender
+            <select name=attractedTo>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </label>
+        <label>Your eye color
+<fieldset>
+
+            <input type="radio" name="eyeColor" value="blue" >Blue eyes
+            <input type="radio" name="eyeColor" value="brown" >Brown eyes
+            <input type="radio" name="eyeColor" value="green" >Green eyes
+            </fieldset>
+        </label>
+
+
+        <label>Your hair color
+           <fieldset>
+            <input type="radio" name="hairColor" value="Blond" >Blond
+            <input type="radio" name="hairColor" value="Brown" >Brown
+            <input type="radio" name="hairColor" value="Red" >Red
+            <input type="radio" name="hairColor" value="Grey" >Grey
+            </fieldset>
+        </label>
+
+
+        <label>Your hair length
+           <fieldset>
+            <input type="radio" name="hairLength" value="bald" >bald
+            <input type="radio" name="hairLength" value="short" >short
+            <input type="radio" name="hairLength" value="medium" >medium
+            <input type="radio" name="hairLength" value="long" >long
+            </fieldset>
+        </label>
+
+        <label>Your length
+            <select name=yourLength>
+                <option value="<150">under 1.50m</option>
+                <option value="Female">1.50 - 1.60</option>
+                <option value="Female">1.60 - 1.70</option>
+                <option value="Female">1.70 - 1.80</option>
+                <option value="Female">1.80 - 1.90</option>
+                <option value=">200">longer then 2.00m</option>
+            </select>
+        </label>
+        <button>Add</button>
+    </form>
+    </section>
+    <% include tail.ejs %>
