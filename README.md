@@ -4,7 +4,7 @@
 
 
 ![screenhot](https://github.com/RobinStut/be-assessment-02/blob/master/static/image/Schermafbeelding%202018-04-10%20om%2012.33.26.png)
-
+![screenshot](https://github.com/RobinStut/be-assessment-02/blob/master/static/image/Schermafbeelding%202018-04-10%20om%2012.56.41.png)
 ## How to install
 
 To install **OurWish**, open up bash and type the following codes: 
