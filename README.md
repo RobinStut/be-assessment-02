@@ -19,7 +19,18 @@ visit localhost:8000 in your browser
 
 ## How to run the database
 
-**Important** :warning:this website is still in progress, so some things may not work like you would expect them to work.
+The data of **OurWish** will be stored in a programm called MongoDB. 
+To install and run database, open a new terminal tab, and type the following codes: 
+
+```
+brew install 
+brew install mongodb
+brew services start mongodb
+mongod --dbpath db
+mongo
+use OurWish
+The port this project is made on is :27017
+```
 
 ## To-do
 
@@ -44,19 +55,6 @@ in case you got lost:
 
 `localhost:8000/profile` page with your profile
 
-## Database 
-
-**Meet Me** stores data in a MongoDB. 
-To run the database, open a new tab and: 
-
-```
-brew install 
-brew install mongodb
-brew services start mongodb
-mongod --dbpath db
-mongo
-use mydatingwebsite
-```
 
 ## Packages 
 
@@ -64,21 +62,8 @@ use mydatingwebsite
 - [Ejs-lint](https://github.com/RyanZim/EJS-Lint) 
 - [Express](https://github.com/expressjs/express) 
 - [Mongodb](https://github.com/mongodb/mongo) 
-- [Nodemon](https://github.com/remy/nodemon) 
-
-## Backend course
-
-This datingwebsite is part of an assessment that belongs to the [Backend](https://github.com/cmda-be/course-17-18n) course which is given [@CMDA](https://github.com/cmda).
 
 
+## Major Credits
 
-
-
-
-
-
-
-
-
-
-
+The teachers who helped me out when I couldn't fix my own problems are [Titus Wormer](https://github.com/wooorm) and [Laurens Aarnoudse](https://github.com/Razpudding). Please check their github and start following them!
