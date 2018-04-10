@@ -1,8 +1,7 @@
-**be-assessment-02**
+# OurWish
 
-# Meet Me
+**OurWish** makes it possible for you to find your perfect date. You are the one who know's your interests the best and now you are able to connect to people who will fit in your perfectly to your preferences.
 
-**Meet Me** is a dating website. This dating website lets you pick a match based on the date idea they have suggested. Besides, the user can filter by age, place, sex and category.
 
 ![screenhot](https://github.com/RobinStut/be-assessment-02/blob/master/static/image/Schermafbeelding%202018-04-10%20om%2012.33.26.png)
 
