@@ -5,16 +5,19 @@
 
 ![screenhot](https://github.com/RobinStut/be-assessment-02/blob/master/static/image/Schermafbeelding%202018-04-10%20om%2012.33.26.png)
 
-## Installation 
+## How to install
 
-To start finding matches, in your terminal: 
+To install **OurWish**, open up bash and type the following codes: 
 
 ```
-git clone https://github.com/sterrevangeest/be-assessment-02.git
+git clone https://github.com/RobinStut/be-assessment-02
 cd be-assessment-02/
 npm install
 npm start
+visit localhost:8000 in your browser
 ```
+
+## How to run the database
 
 **Important** :warning:this website is still in progress, so some things may not work like you would expect them to work.
 
