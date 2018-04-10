@@ -58,9 +58,7 @@ express()
     // wordt maar 1 single upload geaccepteerd
     .post('/', upload.single('pictures'), add)
     .post('/logIn', login)
-    //    .post('/signUp', signUp)
-
-.delete('/:id', remove)
+//    .delete('/:id', remove)
     .use(notFound)
     .listen(8000)
 
@@ -166,19 +164,19 @@ function add(req, res, next) {
 
 
 
-// wordt aangeroepen wanneer er gedeleted wordt op een specifieke movie pagina
-function remove(req, res) {
-    var id = req.params.id
-
-    //wanneer een id value niet overeenkomt met id, wordt er true gegeven
-    data = data.filter(function (value) {
-        return value.id !== id
-    })
-
-    res.json({
-        status: 'ok'
-    })
-}
+//// wordt aangeroepen wanneer er gedeleted wordt op een specifieke movie pagina
+//function remove(req, res) {
+//    var id = req.params.id
+//
+//    //wanneer een id value niet overeenkomt met id, wordt er true gegeven
+//    data = data.filter(function (value) {
+//        return value.id !== id
+//    })
+//
+//    res.json({
+//        status: 'ok'
+//    })
+//}
 
 function notFound(req, res) {
     res.status(404).render('not-found.ejs')
