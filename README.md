@@ -32,36 +32,19 @@ use OurWish
 The port this project is made on is :27017
 ```
 
-## To-do
+## The packages contains:
 
-- [x] Getting server and database working (hello world)
-- [x] Showing data from database in ejs
-- [ ] Upload, modify and delete data
-- [ ] Users can log in and sign up (using sessions)
-- [ ] Users can search
-- [ ] Matching users
-- [ ] Starting a chat
-- [ ] Chatting
-
-
-## Routes
-in case you got lost: 
-
-`localhost:8000` 'starting' page, with links to login and sign-up forms.
-
-`localhost:8000/matches` page with all your matches
-
-`localhost:8000/inbox` page with all your chats
-
-`localhost:8000/profile` page with your profile
-
-
-## Packages 
-
-- [Ejs](https://github.com/tj/ejs) 
-- [Ejs-lint](https://github.com/RyanZim/EJS-Lint) 
-- [Express](https://github.com/expressjs/express) 
-- [Mongodb](https://github.com/mongodb/mongo) 
+- [argon2](https://www.npmjs.com/package/argon2)
+- [array-find](https://www.npmjs.com/package/array-find)
+- [body parser](https://www.npmjs.com/package/body-parser)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+- [ejs](https://github.com/tj/ejs) 
+- [express](https://github.com/expressjs/express) 
+- [express fileupload](https://www.npmjs.com/package/express-fileupload)
+- [express session](https://www.npmjs.com/package/express-session)
+- [mongodb](https://github.com/mongodb/mongo) 
+- [multer](https://www.npmjs.com/package/multer)
+- [slug](https://www.npmjs.com/package/slug)
 
 
 ## Major Credits
