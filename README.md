@@ -4,8 +4,7 @@
 
 **Meet Me** is a dating website. This dating website lets you pick a match based on the date idea they have suggested. Besides, the user can filter by age, place, sex and category.
 
-![screenhot](https://github.com/sterrevangeest/be-assessment-02/blob/master/Schermafbeelding%202018-04-08%20om%2021.37.20.png)
-![screenhot](https://github.com/sterrevangeest/be-assessment-02/blob/master/Schermafbeelding%202018-04-08%20om%2021.37.35.png)
+![screenhot](https://github.com/RobinStut/be-assessment-02/blob/master/static/image/Schermafbeelding%202018-04-10%20om%2012.33.26.png)
 
 ## Installation 
 
